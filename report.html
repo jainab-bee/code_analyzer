@@ -1,0 +1,126 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>file</th>
+      <th>functions</th>
+      <th>classes</th>
+      <th>loops</th>
+      <th>conditionals</th>
+      <th>ast_complexity</th>
+      <th>issues</th>
+      <th>ai_feedback</th>
+      <th>avg_complexity</th>
+      <th>maintainability</th>
+      <th>score</th>
+      <th>grade</th>
+      <th>warnings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>.\ai_code_review_core.py</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>[]</td>
+      <td></td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100</td>
+      <td>Excellent</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>.\backend.py</td>
+      <td>14</td>
+      <td>0</td>
+      <td>17</td>
+      <td>50</td>
+      <td>80</td>
+      <td>[{'type': 'Missing docstring', 'detail': 'load_config', 'context': 'load_config', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'get_python_files', 'context': 'get_python_files', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'read_file', 'context': 'read_file', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'safe_parse', 'context': 'safe_parse', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'extract_structure', 'context': 'extract_structure', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'cyclomatic_complexity_ast', 'context': 'cyclomatic_complexity_ast', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'generate_ai_feedback', 'context': 'generate_ai_feedback', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'analyze_metrics', 'context': 'analyze_metrics', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'generate_diff', 'context': 'generate_diff', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'create_git_hook', 'context': 'create_git_hook', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'analyze_project', 'context': 'analyze_project', 'level': 'INFO'}, {'type': 'Missing docstring', 'detail': 'run_cli', 'context': 'run_cli', 'level': 'INFO'}, {'type': 'Poor variable name', 'detail': 'df', 'context': 'run_cli', 'level': 'INFO'}, {'type': 'Poor variable name', 'detail': 't', 'context': 'run_cli', 'level': 'INFO'}, {'type': 'Magic number used', 'detail': 100, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 10, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 65, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 20, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Debug print found', 'detail': '', 'context': 'run_cli', 'level': 'INFO'}, {'type': 'Magic number used', 'detail': 2, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 5, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 80, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 90, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 4, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 75, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 3, 'context': 'run_cli', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 60, 'context': 'run_cli', 'level': 'WARNING'}]</td>
+      <td>Add a proper docstring to 'load_config' explaining its purpose.; Add a proper docstring to 'get_python_files' explaining its purpose.; Add a proper docstring to 'read_file' explaining its purpose.; Add a proper docstring to 'safe_parse' explaining its purpose.; Add a proper docstring to 'extract_structure' explaining its purpose.; Add a proper docstring to 'cyclomatic_complexity_ast' explaining its purpose.; Add a proper docstring to 'generate_ai_feedback' explaining its purpose.; Add a proper docstring to 'analyze_metrics' explaining its purpose.; Add a proper docstring to 'generate_diff' explaining its purpose.; Add a proper docstring to 'create_git_hook' explaining its purpose.; Add a proper docstring to 'analyze_project' explaining its purpose.; Add a proper docstring to 'run_cli' explaining its purpose.; Rename variable 'df' meaningfully.; Rename variable 't' meaningfully.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.; Remove debug print statements.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.</td>
+      <td>7.07</td>
+      <td>26.64</td>
+      <td>70</td>
+      <td>Moderate</td>
+      <td>WARNING: get_python_files moderate complexity; WARNING: extract_structure moderate complexity; CRITICAL: detect_issues highly complex; WARNING: generate_ai_feedback moderate complexity; WARNING: auto_fix_code moderate complexity; CRITICAL: analyze_metrics highly complex; WARNING: run_cli moderate complexity</td>
+    </tr>
+    <tr>
+      <td>.\cli_runner.py</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>[{'type': 'Debug print found', 'detail': '', 'context': None, 'level': 'INFO'}]</td>
+      <td>Remove debug print statements.</td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100</td>
+      <td>Excellent</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>.\frontend.py</td>
+      <td>1</td>
+      <td>0</td>
+      <td>5</td>
+      <td>12</td>
+      <td>18</td>
+      <td>[{'type': 'Missing docstring', 'detail': 'clear_project_folder', 'context': 'clear_project_folder', 'level': 'INFO'}, {'type': 'Magic number used', 'detail': 300, 'context': 'clear_project_folder', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 3, 'context': 'clear_project_folder', 'level': 'WARNING'}, {'type': 'Magic number used', 'detail': 2, 'context': 'clear_project_folder', 'level': 'WARNING'}]</td>
+      <td>Add a proper docstring to 'clear_project_folder' explaining its purpose.; Replace magic numbers with constants.; Replace magic numbers with constants.; Replace magic numbers with constants.</td>
+      <td>3.00</td>
+      <td>59.63</td>
+      <td>80</td>
+      <td>Good</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>.\git_hook.py</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>[{'type': 'Debug print found', 'detail': '', 'context': None, 'level': 'INFO'}]</td>
+      <td>Remove debug print statements.</td>
+      <td>0.00</td>
+      <td>90.72</td>
+      <td>100</td>
+      <td>Excellent</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>.\sample_test.py</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>[]</td>
+      <td></td>
+      <td>0.00</td>
+      <td>100.00</td>
+      <td>100</td>
+      <td>Excellent</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>.\test.py</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>[(Syntax error in file, CRITICAL)]</td>
+      <td>Fix syntax errors before analysis</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>Error</td>
+      <td>Syntax Error: expected ':' (&lt;unknown&gt;, line 4)</td>
+    </tr>
+  </tbody>
+</table>

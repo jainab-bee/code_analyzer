@@ -1,0 +1,2 @@
+file,functions,classes,complexity_ast,smells,severity_ast,module2_issues,avg_complexity,maintainability_index,score,grade,coverage_hint,warnings
+C:\Users\LENOVO\AppData\Local\Temp\tmphqp1rlp1\validation_and_metrics.py,5,0,20,5,ERROR,"[{'issue': 'long_function', 'severity': 'CRITICAL'}, {'issue': 'magic_number', 'severity': 'WARNING'}, {'issue': 'missing_docstring', 'severity': 'INFO'}]",5.0,66.2,90,Excellent,No test coverage found,WARNING: calculate_score_and_grade has moderate complexity; WARNING: analyze_project has moderate complexity
