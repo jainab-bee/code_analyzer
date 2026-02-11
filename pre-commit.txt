@@ -1,0 +1,14 @@
+def create_git_hook(project_path):
+    hook_path = os.path.join(project_path, ".git", "hooks", "pre-commit")
+
+    script = """#!/bin/sh
+echo "Running AI Code Review..."
+python backend.py
+"""
+
+    os.makedirs(os.path.dirname(hook_path), exist_ok=True)
+
+    with open(hook_path, "w") as f:
+        f.write(script)
+
+    os.chmod(hook_path, 0o755)
