@@ -1,4 +1,3 @@
-def add(a,b):
-    return a+b
-
-def temp() x=10
+a=10
+b=10
+print( a + b  )
