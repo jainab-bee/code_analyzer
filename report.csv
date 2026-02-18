@@ -1,2 +1,0 @@
-file,functions,classes,loops,conditionals,ast_complexity,issues,ai_feedback,avg_complexity,maintainability,score,grade,warnings
-test.py,0,0,0,0,0,"[('Syntax error in file', 'CRITICAL')]",Fix syntax errors before analysis,0,0,0,Error,"Syntax Error: expected ':' (<unknown>, line 4)"
