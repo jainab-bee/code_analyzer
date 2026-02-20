@@ -1,0 +1,72 @@
+PROJECT TITLE: AI-Powered Code Reviewer and Quality Assistant
+
+PROJECT OVERVIEW:
+The AI-Powered Code Reviewer is a specialized static analysis tool designed to
+automatically examine Python source code for quality, performance, and logic.
+By combining Abstract Syntax Tree (AST) parsing with Large Language Models (LLMs),
+the system identifies structural "code smells," calculates complexity metrics,
+and provides actionable feedback through a modern web dashboard and CLI.
+
+This project bridges the gap between deterministic linting and human reasoning,
+acting as a "Senior Developer" assistant that enforces standardized practices
+while suggesting logic optimizations via the Gemini API.
+
+SYSTEM WORKFLOW (THE PIPELINE)
+
+STEP 1: INGESTION
+User uploads .py files or pastes raw source code into the dashboard.
+STEP 2: STATIC ANALYSIS (AST)
+The backend walks the syntax tree to map structure (functions/classes)
+and detect basic smells (magic numbers, unused variables).
+STEP 3: METRICS ENGINE (RADON)
+Calculates Cyclomatic Complexity (logical branching) and the
+Maintainability Index (overall health score).
+STEP 4: AI ENRICHMENT (GEMINI)
+The Agentic engine refactors code, explains complex logic, and
+generates unit tests using generative AI.
+STEP 5: REPORTING & ACTION
+Results are categorized by severity (Info, Warning, Critical). User
+reviews suggestions in the UI or exports a CSV/HTML report.
+
+MODULE BREAKDOWN (MODULES 1–6)
+MODULE 1: CODE PARSING & ANALYSIS
+Uses 'ast' to extract structural components.
+Detects nesting depth and long functions.
+
+MODULE 2: AI REVIEW ENGINE (AGENTIC FEATURES)
+Refactor: Suggests Pythonic and efficient code versions.
+Explain: Provides a step-by-step logic breakdown.
+Test Generation: Automatically builds a PyTest suite for the code.
+
+MODULE 3: VALIDATION & METRICS
+Tracks Complexity (Radon CC) and Maintainability Index (MI).
+Assigns Quality Grades: Excellent (90+), Good (75+), Average (60+), Poor.
+
+MODULE 4: CLI & CONFIGURATION
+Commands: scan, review, apply, report, diff, hook.
+Configuration managed via 'pyproject.toml'.
+
+MODULE 5: VCS & CI INTEGRATION
+Standalone pre-commit hook script to block commits on CRITICAL issues.
+CI/CD templates for automated quality gates.
+
+MODULE 6: REVIEW WEB UI
+Streamlit-powered dark-mode dashboard.
+Side-by-side diff views and interactive metric gauges.
+
+TECHNICAL SPECIFICATIONS
+BACKEND: Python 3.x, AST, Radon, Difflib, TOML.
+FRONTEND: Streamlit, Lucide-Icons, Pandas.
+AI MODEL: gemini-2.5-flash-preview-09-2025.
+PERSISTENCE: In-memory session state (Session-based analysis).
+
+CONCLUSION
+The project demonstrates that hybrid agentic workflows—combining static rules
+with LLM reasoning—standardize code quality while significantly reducing
+the human workload in the development lifecycle.
+
+REFERENCES
+Python AST Module (PEP 339)
+Radon Maintainability Indexing
+Google Generative AI API (Gemini)
+Streamlit UI Framework
