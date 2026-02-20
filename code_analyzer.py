@@ -9,9 +9,6 @@ import toml
 import difflib
 from radon.complexity import cc_visit
 from radon.metrics import mi_visit
-from dotenv import load_dotenv
-
-load_dotenv()
 
 def load_config():
     config_path = "pyproject.toml"
@@ -412,6 +409,8 @@ def create_git_hook():
     hook_script_path = os.path.join(git_dir, "hooks", "pre-commit-script.py")
 
     python_script = """import subprocess
+import os
+import sys
 
 print("Running AI Code Review on staged files...")
 
